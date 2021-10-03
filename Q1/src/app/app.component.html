@@ -1,0 +1,49 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+  <style>
+     table ,td{
+       border: 1px solid black;
+       border-collapse: collapse;
+       table-layout:fixed;
+     }
+     table{
+      width: 100%;
+     }
+     td{
+       vertical-align: top;
+     }
+     table td:first-child{
+       width: 200px;
+     }
+
+     table td:last-child{
+       width: 300px;
+     }
+     tr { line-height: 100%; }
+     
+  </style>
+     <div style="height: 100%;">
+     <table style="height: 100%;">
+       <tr>
+         <td ><input  id=inputNum type=number (input)="calculation()" #input></td>
+         <td>
+            <select id =optSel (change)="calculation()" #select>
+              <option value = 1 > isPrime </option>
+              <option value = 2> isFibonacci </option>
+            </select>
+           
+        </td>
+         <td id = ansCol> {{ansValue}} </td>
+       </tr>
+     </table>
+     </div>
+
+<router-outlet></router-outlet>
